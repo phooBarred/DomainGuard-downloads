@@ -8,13 +8,23 @@ HeartGuard-MW is a modified GPLv3 build of [HeartGuard](https://github.com/hoode
 
 Install HeartGuard-MW.apk on Android 5.1 or newer. If asked, allow your browser to install this download. This updates an existing HeartGuard-MW installation; the original HeartGuard is a separate app.
 
-After installing this version, open **Check for updates** in the app menu. The app downloads a newer release, checks its checksum and signing identity, then opens Android's installer for your confirmation.
+Open **Check for updates** in the app menu. **Install update** downloads the newer release, checks its checksum and signing identity, then opens Android's installer for your confirmation.
 
-## Global whitelist
+## Finding domains
 
-Open **Global whitelist** in the app menu. Paste domains or HTTP/HTTPS URLs, one per line. Domains include their subdomains, across existing and future apps; URL paths and query strings are not separate rules. Exact IP addresses are also supported.
+Open **Search domains across apps** in the app menu. Enter a domain or paste a URL to see matching apps and their latest recorded allowed/blocked outcome. This search includes apps hidden by the main screen's filters.
 
-Use **Block for this app** from an app's domain menu to override an allow. Rule delays, global DNS blocks and lockdown still apply. Remove an app exception through **Rules**. The earlier search/scroll reset issue is not included in this release.
+Search within either global list to find existing entries, including parent-domain rules covering the searched host. For example, searching `images.example.com` also finds an `example.com` rule.
+
+## Global lists and exceptions
+
+Open **Global lists** in the app menu, then choose the whitelist or blacklist. Paste domains or HTTP/HTTPS URLs, one per line. Domains include their subdomains, across existing and future apps; URL paths and query strings are not separate rules. The whitelist also accepts exact IP addresses. **Done** or Android Back returns to the Global lists menu.
+
+Use **Allow globally** from a domain's menu to add it to the whitelist, or **Block for this app** to create an app exception. Rule delays, global DNS blocks and lockdown still apply. Remove an app exception through **Rules**.
+
+## App and domain lists
+
+App searches, expanded apps and scroll position survive rule updates. Live domain rows retain their identity when traffic arrives. Sort and filter controls support saved defaults; Settings > Options lets you choose their placement. **Show in toolbar if room** keeps Filter and Sort together when they fit.
 
 ## Source and license
 
