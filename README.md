@@ -12,7 +12,7 @@ Open **Check for updates** in the app menu. **Install update** downloads the new
 
 ## Finding domains
 
-Open **Search domains across apps** in the app menu. Enter a domain or paste a URL to see matching apps and their latest recorded allowed/blocked outcome. This search includes apps hidden by the main screen's filters.
+Open **Search domains across apps** in the app menu. Enter a domain or paste a URL to see matching apps and their latest recorded allowed/blocked outcome. This search includes apps hidden by the main screen's filters. **Copy domains** copies all matching domains once each, including results outside the visible area.
 
 Search within either global list to find existing entries, including parent-domain rules covering the searched host. For example, searching `images.example.com` also finds an `example.com` rule.
 
@@ -25,6 +25,14 @@ Use **Allow globally** from a domain's menu to add it to the whitelist, or **Blo
 ## App and domain lists
 
 App searches, expanded apps and scroll position survive rule updates. Live domain rows retain their identity when traffic arrives. Sort and filter controls support saved defaults; Settings > Options lets you choose their placement. **Show in toolbar if room** keeps Filter and Sort together when they fit.
+
+In each expanded app, the Sort icon sits beside **Hide allowed domains**. **Always show domain search per app** in Settings > Options keeps search visible by default; turn it off to open and close each app's search with the magnifying glass. Closing search clears that app's filter.
+
+## Rule delays and notifications
+
+**Rule change delay** accepts seconds, minutes, hours or days, with an exact duration preview. Existing delays still apply before a reduction takes effect.
+
+**Hide global block notifications** in Settings > Options is off by default. Turn it on to suppress access notifications for active global blacklist matches, including subdomains. Blocking and access history remain unchanged.
 
 ## Source and license
 
