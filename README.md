@@ -1,41 +1,41 @@
-# HeartGuard-MW downloads
+# DomainGuard downloads
 
-HeartGuard-MW is a modified GPLv3 build of [HeartGuard](https://github.com/hoodedpaladin/HeartGuard), derived from [NetGuard](https://github.com/M66B/NetGuard).
+DomainGuard is an Android firewall with domain rules, delayed changes, and temporary pauses. It is a modified GPLv3 build of [HeartGuard](https://github.com/hoodedpaladin/HeartGuard), derived from [NetGuard](https://github.com/M66B/NetGuard).
 
-[Download the latest APK](https://github.com/phooBarred/heartguard-mw-downloads/releases/latest/download/HeartGuard-MW.apk) · [Releases and corresponding source](https://github.com/phooBarred/heartguard-mw-downloads/releases)
+[Download the latest APK](https://github.com/phooBarred/DomainGuard-downloads/releases/latest/download/DomainGuard.apk) · [Release notes and source](https://github.com/phooBarred/DomainGuard-downloads/releases)
 
 ## Installing and updating
 
-Install HeartGuard-MW.apk on Android 5.1 or newer. If asked, allow your browser to install this download. This updates an existing HeartGuard-MW installation; the original HeartGuard is a separate app.
+Install **DomainGuard.apk** on Android 5.1 or newer. If Android asks, allow the app opening the APK to install it, then confirm installation.
 
-Open **Check for updates** in the app menu. **Install update** downloads the newer release, checks its checksum and signing identity, then opens Android's installer for your confirmation.
+Open **Check for updates** in DomainGuard's menu. **Install update** downloads the newer release, verifies the APK, and opens Android's installation confirmation. The update screen also links to release history.
 
-## Finding domains
+## Finding and copying domains
 
-Open **Search domains across apps** in the app menu. Enter a domain or paste a URL to see matching apps and their latest recorded allowed/blocked outcome. This search includes apps hidden by the main screen's filters. **Copy domains** copies all matching domains once each, including results outside the visible area.
+Hold the main magnifying glass and select **Search domains across apps**. Matching apps appear in the main list with their domains expanded. Each app has its own search, and a local search with no matches leaves the app visible.
 
-Search within either global list to find existing entries, including parent-domain rules covering the searched host. For example, searching `images.example.com` also finds an `example.com` rule.
+**Copy domains** copies distinct domains from the displayed results, respecting the main search, each app's search, Hide allowed, and the displayed row limit. Each app also has its own Copy domains button. Scrollable rows in the displayed list are included.
 
-## Global lists and exceptions
+## Allowing, blocking, and pausing
 
-Open **Global lists** in the app menu, then choose the whitelist or blacklist. Paste domains or HTTP/HTTPS URLs, one per line. Domains include their subdomains, across existing and future apps; URL paths and query strings are not separate rules. The whitelist also accepts exact IP addresses. **Done** or Android Back returns to the Global lists menu.
+Tap a domain and choose **Allow** or **Block**. The globe in the dialog toggles whether the rule applies globally. The dropdown attached to the address offers parent domains, including shared-hosting domains such as githubusercontent.com.
 
-Use **Allow globally** from a domain's menu to add it to the whitelist, or **Block for this app** to create an app exception. Rule delays, global DNS blocks and lockdown still apply. Remove an app exception through **Rules**.
+**Global lists** opens the whitelist or blacklist, each with search and bulk entry. Domain rules include subdomains; URL paths and query strings are not separate rules. App-specific blocks can remain in force despite a global allow.
 
-## App and domain lists
+Allow and Block can be temporary. An app's **Info & controls** panel also offers a timed pause of protection for that app. Turning DomainGuard off offers automatic resumption. Temporary periods are limited to seven days, and the applicable rule delays still apply.
 
-App searches, expanded apps and scroll position survive rule updates. Live domain rows retain their identity when traffic arrives. Sort and filter controls support saved defaults; Settings > Options lets you choose their placement. **Show in toolbar if room** keeps Filter and Sort together when they fit.
+## Lists, controls, and delays
 
-In each expanded app, the Sort icon sits beside **Hide allowed domains**. **Always show domain search per app** in Settings > Options keeps search visible by default; turn it off to open and close each app's search with the magnifying glass. Closing search clears that app's filter.
+Sort and Filter offer **Set as default**. The circular-arrow Reset clears searches and restores saved filter defaults while preserving the current sort.
 
-## Rule delays and notifications
+**Display settings** controls toolbar placement, domain search visibility, timestamps, and compact domain lists. The compact-list switch sets whether a height limit applies; tap its name to adjust the height or try the full-screen preview.
 
-**Rule change delay** accepts seconds, minutes, hours or days, with an exact duration preview. Existing delays still apply before a reduction takes effect.
+**Rule change delay** accepts seconds, minutes, hours, or days, with a readable duration. Decimal entries round to whole seconds. Each app can override the general delay; reducing a delay waits the difference before taking effect.
 
-**Hide global block notifications** in Settings > Options is off by default. Turn it on to suppress access notifications for active global blacklist matches, including subdomains. Blocking and access history remain unchanged.
+**Notify on global blocks** is off by default. Enable it to include access notifications for domains blocked by global rules.
 
 ## Source and license
 
-Each release includes its exact corresponding source archive and SHA-256 checksums. Development takes place in a private repository, while the released source remains available here under GPLv3. Original notices are retained in the source archive and [LICENSE](LICENSE).
+Each release includes its corresponding GPLv3 source archive and SHA-256 checksums. Development takes place in a private repository; released source is available here. Original notices and [LICENSE](LICENSE) are retained.
 
-This is an independent modified build, not an official upstream release. Modifications for the first public MW release were made on October 20, 2026.
+DomainGuard is an independent modified build, not an official upstream release.
