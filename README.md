@@ -2,7 +2,7 @@
 
 DomainGuard is an Android firewall with domain rules, delayed changes, and temporary pauses. It is a modified GPLv3 build of [HeartGuard](https://github.com/hoodedpaladin/HeartGuard), derived from [NetGuard](https://github.com/M66B/NetGuard).
 
-[Download the latest APK](https://github.com/phooBarred/DomainGuard-downloads/releases/latest/download/DomainGuard.apk) · [Release notes and source](https://github.com/phooBarred/DomainGuard-downloads/releases)
+[Download the latest APK](https://github.com/phooBarred/DomainGuard-downloads/releases/latest/download/DomainGuard.apk) · [Release notes and source archives](https://github.com/phooBarred/DomainGuard-downloads/releases) | [Source code](https://github.com/phooBarred-Apps/DomainGuard)
 
 ## Installing and updating
 
@@ -36,6 +36,6 @@ Sort and Filter offer **Set as default**. The circular-arrow Reset clears search
 
 ## Source and license
 
-Each release includes its corresponding GPLv3 source archive and SHA-256 checksums. Development takes place in a private repository; released source is available here. Original notices and [LICENSE](LICENSE) are retained.
+[Browse the source code and development history](https://github.com/phooBarred-Apps/DomainGuard) in the public DomainGuard repository. Each release also includes its corresponding GPLv3 source archive and SHA-256 checksums. Original notices and [LICENSE](LICENSE) are retained.
 
 DomainGuard is an independent modified build, not an official upstream release.
